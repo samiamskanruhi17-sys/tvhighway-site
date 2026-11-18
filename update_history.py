@@ -1,0 +1,93 @@
+# Enhance history.html with images
+history_html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation History — Vineyard Youth Tennis (Est. 1997)</title>
+    <meta name="description" content="Explore the history of Vineyard Youth Tennis, founded in 1997 by Gerald DeBlois to provide free tennis instruction and Har-Tru courts to Martha's Vineyard children.">
+    <style>
+        :root { --forest-dark: #0f382c; --clay-orange: #c85a17; --clay-light: #fbeee6; --sand-bg: #fdfbf7; --text-main: #1f2937; --white: #ffffff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+        body { background: var(--sand-bg); color: var(--text-main); line-height: 1.8; }
+        nav { background: var(--forest-dark); padding: 18px 24px; }
+        .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .nav-inner a { color: #fff; text-decoration: none; font-weight: 600; margin-left: 20px; font-size: 0.95rem; }
+        .nav-inner .logo { font-size: 1.3rem; font-weight: 800; color: #fff; margin-left: 0; }
+        .nav-inner .logo span { color: var(--clay-orange); }
+        .page-header { background: var(--forest-dark); color: #fff; padding: 60px 24px; text-align: center; border-bottom: 4px solid var(--clay-orange); }
+        .page-header h1 { font-size: 2.5rem; margin-bottom: 12px; }
+        .page-header p { color: #d1fae5; font-size: 1.1rem; max-width: 750px; margin: 0 auto; }
+        .container { max-width: 900px; margin: 50px auto; padding: 0 24px; }
+        .card { background: var(--white); padding: 40px; border-radius: 12px; border: 1px solid #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); margin-bottom: 30px; }
+        h2 { color: var(--forest-dark); margin-bottom: 18px; font-size: 1.8rem; border-bottom: 2px solid var(--clay-light); padding-bottom: 8px; }
+        h3 { color: var(--clay-orange); margin: 24px 0 10px; font-size: 1.3rem; }
+        p { margin-bottom: 18px; color: #374151; font-size: 1.05rem; }
+        .img-featured { width: 100%; height: 380px; object-fit: cover; border-radius: 8px; margin: 20px 0; border: 1px solid #e5e7eb; }
+        .img-caption { font-size: 0.88rem; color: #6b7280; text-align: center; margin-top: -12px; margin-bottom: 24px; font-style: italic; }
+        footer { background: var(--forest-dark); color: #9ca3af; text-align: center; padding: 30px 24px; margin-top: 60px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a href="/" class="logo">VINEYARD <span>YOUTH TENNIS</span></a>
+            <div>
+                <a href="/">Home</a>
+                <a href="/history.html">History</a>
+                <a href="/facilities.html">Facilities</a>
+                <a href="/programs.html">Programs</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1>Foundation History & Philanthropy</h1>
+        <p>Over two decades of dedication to the youth and families of Martha's Vineyard.</p>
+    </div>
+    <div class="container">
+        <div class="card">
+            <h2>The Vision of Gerald DeBlois (1997)</h2>
+            <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0?auto=format&fit=crop&w=1000&q=80" alt="Har-Tru Clay Tennis Courts Martha's Vineyard" class="img-featured">
+            <div class="img-caption">The Har-Tru clay court training facility on Barnes Road, Oak Bluffs, founded in 1997.</div>
+            
+            <p>In 1997, West Tisbury resident Gerald "Gerry" DeBlois recognized an unmet need across Martha's Vineyard: while summer residents enjoyed access to private tennis clubs, island children had few affordable opportunities to learn a lifelong athletic discipline.</p>
+            <p>Driven by private philanthropy and a passion for community sportsmanship, DeBlois founded the Vineyard Youth Tennis Foundation with a singular, historic promise: to provide free tennis instruction and court access to every island child from first grade through high school graduation.</p>
+            
+            <h3>Building the Barnes Road Facility (2002)</h3>
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80" alt="Chuck Sullivan Designed Clubhouse" class="img-featured">
+            <div class="img-caption">The classic shingle-style clubhouse and observation deck overlooking Har-Tru championship courts.</div>
+            
+            <p>Initially operating out of elementary school gymnasiums in West Tisbury and Oak Bluffs, DeBlois financed the purchase of an 11-acre wooded parcel on Barnes Road, situated near the island roundabout. Construction began in 2000, and in July 2002, the world-class center officially opened to the public.</p>
+            <p>Featuring four laser-graded Har-Tru clay courts, a classic New England shingle-style clubhouse designed by architect Chuck Sullivan, and an inflatable winter bubble dome, the facility immediately became a centerpiece of island athletic life.</p>
+
+            <h3>The Golden Championship Era (2006–2018)</h3>
+            <img src="https://images.unsplash.com/photo-1554068865-24cecd4e34b8?auto=format&fit=crop&w=1000&q=80" alt="Junior Championship Tournament" class="img-featured">
+            <div class="img-caption">Generations of island youth developed championship tennis mechanics and sportsmanship at VYT.</div>
+            
+            <p>Under the stewardship of Executive Director Scott Smith and Head Professional Michael Hallisky, VYT trained over a thousand junior players. The foundation's rigorous instruction directly fueled the dominance of Martha's Vineyard Regional High School (MVRHS) varsity tennis teams, leading them to multiple Massachusetts state championship titles.</p>
+            <p>DeBlois contributed an estimated $12 million over twenty years to ensure no child was ever charged tuition or turned away.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 1997 – 2026 Vineyard Youth Tennis Foundation. 618 Barnes Road, Oak Bluffs, MA 02557.</p>
+    </footer>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,728028,4,0,0,0,00010000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?728028&101" alt="page hit counter" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+</body>
+</html>
+'''
+
+with open('scratch/history.html', 'w', encoding='utf-8') as f:
+    f.write(history_html)
+print('Updated history.html with images')
